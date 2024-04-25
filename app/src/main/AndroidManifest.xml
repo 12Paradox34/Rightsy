@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.health">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="Rightsy"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Health"
+        tools:targetApi="31">
+        <activity
+            android:name=".WebGovActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GovActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Weekly_Test"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MissingActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ZumbleWordsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SudkhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartBuyMedicineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Weekly_Analysis"
+            android:exported="false" />
+        <activity
+            android:name=".SRT_Quizes"
+            android:exported="false" />
+        <activity
+            android:name=".Car_Web"
+            android:exported="false" />
+        <activity
+            android:name=".LabTextBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartLabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LabTestDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SRT_Quizes"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetectiveWeb"
+            android:exported="false" />
+        <activity
+            android:name=".Brain_Teasure"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

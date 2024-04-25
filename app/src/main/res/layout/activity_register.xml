@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_selector"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="217dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/img_26"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/textViewCartPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Registration"
+        android:textColor="@color/White2"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextAppFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:ems="13"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCartPackageName"
+        app:layout_constraintStart_toStartOf="@+id/textViewCartPackageName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartPackageName" />
+
+    <EditText
+        android:id="@+id/editTextAppAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="13"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAppFull"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextAppFull"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFull" />
+
+    <EditText
+        android:id="@+id/editTextAppContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="13"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAppAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextAppAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+
+    <EditText
+        android:id="@+id/editTextAppFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="8dp"
+        android:ems="13"
+        android:hint="Confirm-Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/White2"
+        android:textColorHint="@color/White2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAppContactNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextAppContactNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:text="Register"
+        android:textColorLink="#D66565"
+        app:backgroundTint="#04b4fb"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAppFees"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/editTextAppFees"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+
+    <TextView
+        android:id="@+id/textViewExistingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="19dp"
+        android:text="Login"
+        android:textColor="#04b4fb"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckout" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="338dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_10" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="174dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="19dp"
+        android:text="Already have an account?"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewExistingUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

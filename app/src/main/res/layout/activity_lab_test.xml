@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SRT_Quizes">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/srt_quizes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginEnd="374dp"
+            android:layout_marginRight="374dp"
+            android:layout_marginBottom="258dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="305dp"
+            android:layout_marginLeft="305dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:text="1/10"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/srt_question"
+            android:layout_width="404dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="112dp"
+            android:text="Question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+
+        android:id="@+id/btn_Choose1"
+        android:layout_width="393dp"
+        android:layout_height="59dp"
+        android:background="#d8fcff"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+
+        android:id="@+id/btn_Choose2"
+        android:layout_width="393dp"
+        android:layout_height="59dp"
+        android:background="#d8fcff"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <TextView
+
+        android:id="@+id/btn_Choose3"
+        android:layout_width="393dp"
+        android:layout_height="59dp"
+        android:background="#d8fcff"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <TextView
+
+        android:id="@+id/btn_Choose4"
+        android:layout_width="393dp"
+        android:layout_height="59dp"
+        android:background="#d8fcff"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="417dp"
+        android:layout_height="65dp"
+        android:background="#10ecff"
+        android:text="Next"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="669dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
